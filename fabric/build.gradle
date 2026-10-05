@@ -1,0 +1,54 @@
+plugins {
+	id 'fabric-loom' version "${loom_version}"
+}
+
+repositories {
+	mavenCentral()
+}
+
+loom {
+	runs {
+		client {
+			programArgs "--username", "V1", "--quickPlaySingleplayer", "Ultracraft"
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+	filesMatching("fabric.mod.json") { expand "version": version }
+}
+
+tasks.withType(JavaCompile).configureEach { it.options.release = 21 }
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+// The Minecraft launcher's "Ultracraft" profile plays from ../minecraft: every build puts the mod (and the Fabric API
+// it needs) in its mods folder, so the launcher always starts the latest build.
+def launcherMods = file("../minecraft/mods")
+tasks.register("installLauncher") {
+	dependsOn remapJar
+	doLast {
+		launcherMods.mkdirs()
+		def api = configurations.detachedConfiguration(dependencies.create("net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"))
+		api.transitive = false
+		launcherMods.listFiles().findAll { it.name.startsWith("ultracraft-") || it.name.startsWith("fabric-api-") }.each { it.delete() }
+		copy {
+			from remapJar.archiveFile
+			from api.singleFile
+			into launcherMods
+		}
+	}
+}
+build.finalizedBy installLauncher
