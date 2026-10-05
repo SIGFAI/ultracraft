@@ -3,6 +3,13 @@
   "version": "0.1.4",
   "name": "Ultracraft",
   "tagline": "The real ULTRAKILL inside Minecraft 1.21.11: become V1 in your Minecraft world, with ULTRAKILL's weapons, enemies, shop, P-rank and the Cyber Grind.",
+  "how_to_play": [
+    "Become V1 in your Minecraft world: blocks and mobs turn into ULTRAKILL's world and enemies; earn P and take on the Cyber Grind.",
+    "WASD, Space jump, Left Shift dash, Left Ctrl slide or slam, mouse fire, F punch, G change arm, R whiplash, 1-5 weapons.",
+    "F8 switches between V1 and Steve, V switches guns and Minecraft hands; type /uc help for commands.",
+    "Craft the shop from 5 iron ingots, 2 gold ingots, a glass pane and a block of redstone, then walk up to it as V1.",
+    "Have Steam running and press Play: ULTRAKILL starts hidden with Minecraft. Open a world and you are V1."
+  ],
   "kind": "passthrough",
   "games": [
     {
