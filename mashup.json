@@ -4,11 +4,11 @@
   "name": "Ultracraft",
   "tagline": "The real ULTRAKILL inside Minecraft 1.21.11: become V1 in your Minecraft world, with ULTRAKILL's weapons, enemies, shop, P-rank and the Cyber Grind.",
   "how_to_play": [
-    "Become V1 in your Minecraft world: blocks and mobs turn into ULTRAKILL's world and enemies; earn P and take on the Cyber Grind.",
-    "WASD, Space jump, Left Shift dash, Left Ctrl slide or slam, mouse fire, F punch, G change arm, R whiplash, 1-5 weapons.",
-    "F8 switches between V1 and Steve, V switches guns and Minecraft hands; type /uc help for commands.",
-    "Craft the shop from 5 iron ingots, 2 gold ingots, a glass pane and a block of redstone, then walk up to it as V1.",
-    "Have Steam running and press Play: ULTRAKILL starts hidden with Minecraft. Open a world and you are V1."
+    "Become V1 in your Minecraft world: a hidden ULTRAKILL turns its blocks and mobs into ULTRAKILL's enemies and world, with P-rank, a shop and the Cyber Grind.",
+    "Have Steam running, then press Play: Minecraft starts and ULTRAKILL starts by itself, hidden. Do not start ULTRAKILL yourself. Open a world and you are V1.",
+    "WASD, Space jump, Left Shift dash, Left Ctrl slide/slam, mouse fire/alt fire, F punch, G change arm, R whiplash, E next variation, 1-5 weapons.",
+    "F8 switches V1/Steve, V guns/Minecraft hands. Settings and rebinds: the Ultracraft... button (title screen, pause menu). Commands: /uc help.",
+    "Craft the shop from 5 iron ingots, 2 gold ingots, a glass pane and a block of redstone; walk up as V1 to spend P. The Cyber Grind starts from its screen."
   ],
   "kind": "passthrough",
   "games": [
@@ -249,10 +249,7 @@
   "status": "beta",
   "issues": "https://github.com/alfr0762/ultracraft/issues",
   "notes": [
-    "How it works: you become V1 inside your Minecraft world. The real ULTRAKILL runs hidden next to Minecraft and is drawn into its window: Minecraft's blocks and mobs become ULTRAKILL's world and enemies, with weapons, P-rank, a craftable shop and the Cyber Grind.",
-    "Have Steam running, then press Play: Minecraft starts and ULTRAKILL starts by itself (hidden) through Steam and closes with Minecraft. Do not start ULTRAKILL yourself. Open a world and you are V1. Settings: the Ultracraft... button on the title screen or pause menu; commands: /uc help.",
-    "Keys (rebind in Ultracraft... > ULTRAKILL Controls): WASD, Space jump, Left Shift dash, Left Ctrl slide/slam, mouse fire/alt fire, F punch, G change arm, R whiplash, E next variation, 1-5 weapons. F8 switches V1/Steve, V switches guns/Minecraft hands.",
-    "Shop: craft it from 5 iron ingots, 2 gold ingots, a glass pane and a block of redstone, place it and walk up as V1 to spend P. The Cyber Grind (waves of enemies around the shop) starts from the shop's screen. You need ULTRAKILL on Steam and Minecraft: Java Edition; Windows only.",
+    "You need ULTRAKILL on Steam and Minecraft: Java Edition; Windows only. ULTRAKILL closes with Minecraft. The Cyber Grind is waves of enemies around the shop.",
     "Two games share your graphics card: if it is slow, set ULTRAKILL Resolution to 540p or 480p in Ultracraft... settings and keep Minecraft render distance at 8-12 chunks. Your ULTRAKILL save is never written. Multiplayer is Open to LAN, everyone with the same mods.",
     "Beta with open bug reports (V1 not appearing, ULTRAKILL not opening, rendering). BepInEx and the bridge plugin go into the ULTRAKILL folder; Restore removes them. Report bugs to the author on the upstream issue tracker."
   ]
