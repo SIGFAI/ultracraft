@@ -242,11 +242,11 @@
   "status": "beta",
   "issues": "https://github.com/alfr0762/ultracraft/issues",
   "notes": [
-    "You need both games: ULTRAKILL on Steam and Minecraft: Java Edition. Windows only.",
-    "Have Steam running, then press Play: Minecraft starts, and ULTRAKILL starts by itself (hidden) through Steam and closes with Minecraft. Do not start ULTRAKILL yourself. Open a world and you are V1 (F8 switches back to Steve).",
-    "The Minecraft side is the app's own Prism instance \"sigf-ultracraft\" (Minecraft 1.21.11, Fabric Loader 0.19.5, Fabric API 0.141.6+1.21.11, Java 21). BepInEx 5.4.23.5 and the UltraBridge plugin are installed into the ULTRAKILL folder; Restore removes them.",
-    "Two games share your graphics card: if it is slow, set ULTRAKILL Resolution to 540p or 480p in the Ultracraft... settings (title screen or pause menu), and keep Minecraft's render distance at 8 to 12 chunks.",
-    "Your ULTRAKILL save is never written: progress lives in the Minecraft world. Multiplayer is Minecraft's Open to LAN, everyone with the same mods.",
-    "Beta, released days ago with open bug reports (V1 not appearing, ULTRAKILL not opening, rendering): report bugs to the author on the upstream issue tracker."
+    "How it works: you become V1 inside your Minecraft world. The real ULTRAKILL runs hidden next to Minecraft and is drawn into its window: Minecraft's blocks and mobs become ULTRAKILL's world and enemies, with weapons, P-rank, a craftable shop and the Cyber Grind.",
+    "Have Steam running, then press Play: Minecraft starts and ULTRAKILL starts by itself (hidden) through Steam and closes with Minecraft. Do not start ULTRAKILL yourself. Open a world and you are V1. Settings: the Ultracraft... button on the title screen or pause menu; commands: /uc help.",
+    "Keys (rebind in Ultracraft... > ULTRAKILL Controls): WASD, Space jump, Left Shift dash, Left Ctrl slide/slam, mouse fire/alt fire, F punch, G change arm, R whiplash, E next variation, 1-5 weapons. F8 switches V1/Steve, V switches guns/Minecraft hands.",
+    "Shop: craft it from 5 iron ingots, 2 gold ingots, a glass pane and a block of redstone, place it and walk up as V1 to spend P. The Cyber Grind (waves of enemies around the shop) starts from the shop's screen. You need ULTRAKILL on Steam and Minecraft: Java Edition; Windows only.",
+    "Two games share your graphics card: if it is slow, set ULTRAKILL Resolution to 540p or 480p in Ultracraft... settings and keep Minecraft render distance at 8-12 chunks. Your ULTRAKILL save is never written. Multiplayer is Open to LAN, everyone with the same mods.",
+    "Beta with open bug reports (V1 not appearing, ULTRAKILL not opening, rendering). BepInEx and the bridge plugin go into the ULTRAKILL folder; Restore removes them. Report bugs to the author on the upstream issue tracker."
   ]
 }
