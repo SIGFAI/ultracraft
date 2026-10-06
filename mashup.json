@@ -251,6 +251,7 @@
   "notes": [
     "You need ULTRAKILL on Steam and Minecraft: Java Edition; Windows only. ULTRAKILL closes with Minecraft. The Cyber Grind is waves of enemies around the shop.",
     "Two games share your graphics card: if it is slow, set ULTRAKILL Resolution to 540p or 480p in Ultracraft... settings and keep Minecraft render distance at 8-12 chunks. Your ULTRAKILL save is never written. Multiplayer is Open to LAN, everyone with the same mods.",
-    "Beta with open bug reports (V1 not appearing, ULTRAKILL not opening, rendering). BepInEx and the bridge plugin go into the ULTRAKILL folder; Restore removes them. Report bugs to the author on the upstream issue tracker."
+    "Beta with open bug reports (V1 not appearing, ULTRAKILL not opening, rendering). BepInEx and the bridge plugin go into the ULTRAKILL folder; Restore removes them. Report bugs to the author on the upstream issue tracker.",
+    "No free SIGF server for this mashup: Ultracraft's server side still calls Minecraft client code, which a hosted server does not have. Use Open to LAN."
   ]
 }
